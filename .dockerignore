@@ -1,0 +1,13 @@
+node_modules/
+api/node_modules/
+frontend/node_modules/
+*.db
+*.db-shm
+*.db-wal
+.env
+logs/
+products/
+.git/
+.gitignore
+*.md
+scripts/

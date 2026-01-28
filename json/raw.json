@@ -1,0 +1,193 @@
+{
+    "productName": "CalMag Plus",
+    "productSlogan": "Calcium & Magnesium Promote Healthy Bones & Body Tone◊",
+    "productDescription": "Do I need calcium and magnesium for more than just my bones and teeth? Calcium and magnesium are two of the most important of all nutrients. Your body needs them for more than just bones and teeth; they are also critical for your muscles, heart, and nervous system. CalMag Plus is pH-balanced, which is essential for the best absorption of calcium. Vitamin D, vitamin K, trace minerals and boron play specific roles in healthy calcium metabolism, while calcium and magnesium team up with these vital nutrients to promote healthy bone structure, enhance muscle tone and relaxation, and maintain dental health.◊ Magnesium is critical for more than 300 different enzyme systems in the body, plus being necessary for healthy bones and ATP production, which provides cellular energy.◊",
+    "subbrand": null,
+    "supplementFacts": {
+        "servings": "3 Tablets",
+        "servingsPerContainer": "100",
+        "calories": null,
+        "protein": null,
+        "nutrients": [
+            {
+                "name": "Vitamin C",
+                "amount": "72 mg",
+                "dailyValuePercentAdult": "80",
+                "dailyValuePercentChildren": null
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "3 mcg",
+                "dailyValuePercentAdult": "15",
+                "dailyValuePercentChildren": null
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "19 mcg",
+                "dailyValuePercentAdult": "16",
+                "dailyValuePercentChildren": null
+            },
+            {
+                "name": "Calcium",
+                "amount": "300 mg",
+                "dailyValuePercentAdult": "23",
+                "dailyValuePercentChildren": null
+            },
+            {
+                "name": "Phosphorus",
+                "amount": "81 mg",
+                "dailyValuePercentAdult": "6",
+                "dailyValuePercentChildren": null
+            },
+            {
+                "name": "Magnesium",
+                "amount": "150 mg",
+                "dailyValuePercentAdult": "36",
+                "dailyValuePercentChildren": null
+            },
+            {
+                "name": "Zinc",
+                "amount": "4.5 mg",
+                "dailyValuePercentAdult": "41",
+                "dailyValuePercentChildren": null
+            },
+            {
+                "name": "Copper",
+                "amount": "0.3 mg",
+                "dailyValuePercentAdult": "33",
+                "dailyValuePercentChildren": null
+            },
+            {
+                "name": "Manganese",
+                "amount": "1.5 mg",
+                "dailyValuePercentAdult": "65",
+                "dailyValuePercentChildren": null
+            },
+            {
+                "name": "Boron",
+                "amount": "1.8 mg",
+                "dailyValuePercentAdult": null,
+                "dailyValuePercentChildren": null
+            },
+            {
+                "name": "Betaine HCl",
+                "amount": "30 mg",
+                "dailyValuePercentAdult": null,
+                "dailyValuePercentChildren": null
+            },
+            {
+                "name": "L-Glutamic Acid",
+                "amount": "60 mg",
+                "dailyValuePercentAdult": null,
+                "dailyValuePercentChildren": null
+            },
+            {
+                "name": "Alfalfa Leaf",
+                "amount": "12 mg",
+                "dailyValuePercentAdult": null,
+                "dailyValuePercentChildren": null
+            },
+            {
+                "name": "Silicon",
+                "amount": "4.5 mg",
+                "dailyValuePercentAdult": null,
+                "dailyValuePercentChildren": null
+            },
+            {
+                "name": "Kelp (Ascophyllum nodosum Le Jol.) Whole Plant",
+                "amount": "6 mg",
+                "dailyValuePercentAdult": null,
+                "dailyValuePercentChildren": null
+            }
+        ]
+    },
+    "ingredients": [
+        {
+            "name": "PolyCalPlex™ proprietary blend (Tricalcium Phosphate, Calcium Citrate, Calcium Carbonate, Calcium Glycerophosphate, Calcium Lactate)",
+            "isOrganic": false
+        },
+        {
+            "name": "PolyMagPlex™ proprietary blend (Magnesium Oxide, Magnesium Carbonate, Magnesium Glycerophosphate, Magnesium Gluconate)",
+            "isOrganic": false
+        },
+        {
+            "name": "Microcrystalline Cellulose",
+            "isOrganic": false
+        },
+        {
+            "name": "Calcium Ascorbate",
+            "isOrganic": false
+        },
+        {
+            "name": "Hydroxypropylcellulose",
+            "isOrganic": false
+        },
+        {
+            "name": "L-Glutamic Acid HCl",
+            "isOrganic": false
+        },
+        {
+            "name": "Zinc Gluconate",
+            "isOrganic": false
+        },
+        {
+            "name": "Betaine HCl",
+            "isOrganic": false
+        },
+        {
+            "name": "Croscarmellose Sodium",
+            "isOrganic": false
+        },
+        {
+            "name": "Stearic Acid",
+            "isOrganic": false
+        },
+        {
+            "name": "PhytoZyme® proprietary blend (Bromelain, Papain, Alfalfa, Parsley, and vegetable and fruit concentrates from Carrots, Broccoli, Pea, Banana, Cantaloupe, Lima Beans, Mango, Pumpkin, Spinach, Tomato, Cauliflower, Orange, Papaya, Sweet Potato, Asparagus, Beet, Green Bean, Snow Pea, Blueberry, Chili Pepper, Cranberry, Cucumber, Guava, Grapefruit, Kale, Lemon, Maitake Mushroom, Peach, Pineapple, Watercress, and Zucchini)",
+            "isOrganic": false
+        },
+        {
+            "name": "Sodium Borate Decahydrate",
+            "isOrganic": false
+        },
+        {
+            "name": "Manganese Gluconate",
+            "isOrganic": false
+        },
+        {
+            "name": "Alfalfa Leaf",
+            "isOrganic": false
+        },
+        {
+            "name": "Magnesium Stearate",
+            "isOrganic": false
+        },
+        {
+            "name": "Silica",
+            "isOrganic": false
+        },
+        {
+            "name": "Kelp (Ascophyllum nodosum Le Jol.) Whole Plant",
+            "isOrganic": false
+        },
+        {
+            "name": "Copper Gluconate",
+            "isOrganic": false
+        },
+        {
+            "name": "Vitamin K1 (Phytomenadione)",
+            "isOrganic": false
+        },
+        {
+            "name": "Vitamin D3 (Cholecalciferol)",
+            "isOrganic": false
+        }
+    ],
+    "directions": "Three tablets twice a day — supply 600 mg of Calcium and 300 mg of Magnesium, plus other synergistic nutrients for optimal utilization.◊",
+    "caution": "As with all supplements, please consult your physician prior to taking if you are pregnant or attempting to become pregnant, breast-feeding, under a doctor's care or taking prescription medication. This product is processed in the same facility as products containing fish, shellfish, soy, dairy, peanuts and tree nuts.",
+    "dietaryAttributes": [
+        "vegetarian",
+        "gluten-free"
+    ],
+    "references": "1. Abraham, Grewal. A total dietary program emphasizing magnesium instead of calcium. J Reprod Med 1990;35:503-507\n2. Lloyd, Tiantaflyllou, Baker, et al. Women Athletes with menstrual irregularity have increased musculoskeletal injuries. Med Sci Sports Exercise 1986;18(4)\n3. Salamone, Cauley, Black, et al. Effect of a lifestyle intervention on bone mineral density in premenopausal women: a randomized controlled trial. Am J Clin Nutri 1999; 70\n4. Eaton-Evans, McIlrath, Jackson, et al. Copper supplementation and bone mineral density in middle-aged women. Proc Nutr Soc 1995; 54\n5. Faskanich, Weber, Willet, et al. Vitamin K intake and hip fractures in women: a prospective study. Am J Clin Nutr 1999;69\n6. Raloff J. Reason for boning up on manganese. Science News 1986; September 27"
+}

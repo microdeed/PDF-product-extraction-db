@@ -1,0 +1,51 @@
+{
+  "name": "product-pdf-extractor",
+  "version": "1.0.0",
+  "description": "PDF Product Information Extraction System using Claude Vision API",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "process": "tsx src/index.ts process",
+    "retry": "tsx src/index.ts retry-failed",
+    "report": "tsx src/index.ts report",
+    "verify": "tsx src/index.ts verify",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "api:install": "cd api && npm install",
+    "api:dev": "cd api && npm run dev",
+    "frontend:install": "cd frontend && npm install",
+    "frontend:dev": "cd frontend && npm run dev"
+  },
+  "keywords": [
+    "pdf",
+    "extraction",
+    "claude",
+    "vision-api",
+    "sqlite"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "better-sqlite3": "^11.7.0",
+    "dotenv": "^16.4.7",
+    "glob": "^11.0.0",
+    "json5": "^2.2.3",
+    "openai": "^6.16.0",
+    "pdf-lib": "^1.17.1",
+    "unpdf": "^1.4.0",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^4.0.17"
+  }
+}
