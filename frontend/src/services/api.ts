@@ -106,3 +106,81 @@ export async function fetchSubbrands(): Promise<string[]> {
   }
   return response.json();
 }
+
+// --- Stats & Compare Interfaces ---
+
+export interface OverviewStats {
+  totalProducts: number;
+  totalNormalizedIngredients: number;
+  totalSubbrands: number;
+  productsPerSubbrand: { subbrand: string; count: number }[];
+}
+
+export interface NormalizedIngredientFrequency {
+  normalizedName: string;
+  displayName: string;
+  productCount: number;
+  variants: string[];
+  isOrganic: boolean;
+  products: { product_code: string; product_name: string }[];
+}
+
+export interface IngredientProduct {
+  product_code: string;
+  product_name: string;
+  subbrand: string | null;
+}
+
+export interface IngredientDistribution {
+  bucket: string;
+  count: number;
+}
+
+export interface ProductComparisonItem {
+  product_code: string;
+  product_name: string;
+  ingredients: { normalizedName: string; displayName: string; isOrganic: boolean }[];
+}
+
+export interface ComparisonResult {
+  products: ProductComparisonItem[];
+  allNormalizedIngredients: {
+    normalizedName: string;
+    displayName: string;
+    presentIn: string[];
+  }[];
+  sharedCount: number;
+  uniqueCount: number;
+}
+
+// --- Stats & Compare Fetchers ---
+
+export async function fetchOverviewStats(): Promise<OverviewStats> {
+  const response = await fetch(`${API_BASE}/stats/overview`);
+  if (!response.ok) throw new Error('Failed to fetch overview stats');
+  return response.json();
+}
+
+export async function fetchIngredientFrequencies(limit: number = 50): Promise<NormalizedIngredientFrequency[]> {
+  const response = await fetch(`${API_BASE}/stats/ingredients?limit=${limit}`);
+  if (!response.ok) throw new Error('Failed to fetch ingredient frequencies');
+  return response.json();
+}
+
+export async function fetchIngredientDistribution(): Promise<IngredientDistribution[]> {
+  const response = await fetch(`${API_BASE}/stats/distribution`);
+  if (!response.ok) throw new Error('Failed to fetch ingredient distribution');
+  return response.json();
+}
+
+export async function fetchIngredientProducts(normalizedName: string): Promise<IngredientProduct[]> {
+  const response = await fetch(`${API_BASE}/stats/ingredients/${encodeURIComponent(normalizedName)}/products`);
+  if (!response.ok) throw new Error('Failed to fetch ingredient products');
+  return response.json();
+}
+
+export async function fetchComparison(codes: string[]): Promise<ComparisonResult> {
+  const response = await fetch(`${API_BASE}/compare?codes=${codes.join(',')}`);
+  if (!response.ok) throw new Error('Failed to fetch comparison');
+  return response.json();
+}

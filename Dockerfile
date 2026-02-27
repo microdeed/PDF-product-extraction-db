@@ -1,5 +1,7 @@
 # Build stage
 FROM node:20-alpine AS builder
+
+LABEL org.opencontainers.image.source=https://github.com/microdeed/productDb
 WORKDIR /app
 
 # Install build dependencies for better-sqlite3

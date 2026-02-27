@@ -520,10 +520,654 @@ body {
   margin-top: var(--spacing-md);
 }
 
+/* Header Navigation */
+.header-nav {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius);
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-text);
+  background-color: var(--color-row-even);
+}
+
+.nav-link-active {
+  color: var(--color-accent);
+  background-color: #eff6ff;
+}
+
+/* Page Title */
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Stat Cards */
+.stat-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.stat-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: var(--spacing-xs);
+}
+
+.stat-card-shared .stat-value {
+  color: var(--color-organic);
+}
+
+.stat-card-unique .stat-value {
+  color: #d97706;
+}
+
+/* Stats Sections */
+.stats-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.stats-section h2 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-xs);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Bar Chart */
+.bar-chart {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.bar-label {
+  width: 140px;
+  font-size: 13px;
+  text-align: right;
+  flex-shrink: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bar-track {
+  flex: 1;
+  height: 24px;
+  background-color: var(--color-row-even);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background-color: var(--color-accent);
+  border-radius: 2px;
+  min-width: 2px;
+  transition: width 0.3s ease;
+}
+
+.bar-value {
+  width: 40px;
+  font-size: 13px;
+  font-family: var(--font-mono);
+  color: var(--color-text-secondary);
+  flex-shrink: 0;
+}
+
+/* Frequency Table */
+.freq-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-bottom: var(--spacing-md);
+}
+
+.freq-table thead {
+  background-color: var(--color-header-bg);
+}
+
+.freq-table th {
+  padding: var(--spacing-sm) var(--spacing-md);
+  text-align: left;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid var(--color-border-dark);
+}
+
+.freq-table td {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.freq-table tbody tr:nth-child(even) {
+  background-color: var(--color-row-even);
+}
+
+.freq-rank {
+  width: 40px;
+  text-align: center;
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.freq-name {
+  font-weight: 500;
+}
+
+.freq-organic {
+  color: var(--color-organic);
+  font-size: 11px;
+}
+
+.freq-variants {
+  color: var(--color-text-muted);
+  font-size: 11px;
+}
+
+.freq-count {
+  width: 70px;
+  text-align: right;
+  font-family: var(--font-mono);
+}
+
+.freq-bar-col {
+  width: 120px;
+}
+
+.freq-bar-track {
+  width: 100%;
+  height: 16px;
+  background-color: var(--color-row-even);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.freq-bar-fill {
+  height: 100%;
+  background-color: var(--color-accent);
+  border-radius: 2px;
+  min-width: 2px;
+}
+
+.show-more-button {
+  display: block;
+  margin: 0 auto;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  color: var(--color-accent);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.show-more-button:hover {
+  background-color: var(--color-row-even);
+}
+
+/* Histogram */
+.histogram {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--spacing-sm);
+  height: 200px;
+  padding-top: var(--spacing-md);
+}
+
+.histogram-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.histogram-bar-wrap {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.histogram-bar {
+  width: 80%;
+  background-color: var(--color-accent);
+  border-radius: 2px 2px 0 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 2px;
+  transition: height 0.3s ease;
+}
+
+.histogram-count {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: white;
+  padding-top: 2px;
+}
+
+.histogram-label {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  margin-top: var(--spacing-xs);
+  text-align: center;
+}
+
+/* AI Placeholder */
+.ai-placeholder {
+  border: 2px dashed var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-xl);
+  text-align: center;
+}
+
+.ai-placeholder h2 {
+  border-bottom: none;
+}
+
+.ai-placeholder p {
+  font-style: italic;
+  color: var(--color-text-muted);
+}
+
+/* Compare Page */
+.compare-search {
+  position: relative;
+  margin-bottom: var(--spacing-md);
+}
+
+.compare-search .search-input {
+  width: 100%;
+}
+
+.search-spinner {
+  position: absolute;
+  right: var(--spacing-md);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.compare-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-top: none;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  box-shadow: var(--shadow-md);
+  z-index: 10;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.compare-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  width: 100%;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  cursor: pointer;
+  text-align: left;
+  font-size: 13px;
+}
+
+.compare-dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.compare-dropdown-item:hover {
+  background-color: var(--color-row-even);
+}
+
+/* Compare Chips */
+.compare-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.compare-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background-color: var(--color-badge-bg);
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.chip-code {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
+
+.chip-remove {
+  background: none;
+  border: none;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  padding: 0 2px;
+  margin-left: 2px;
+}
+
+.chip-remove:hover {
+  color: var(--color-caution);
+}
+
+.chip-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.chip-link:hover {
+  color: var(--color-accent);
+}
+
+.compare-col-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.compare-col-link:hover {
+  color: var(--color-accent);
+}
+
+.compare-col-link:hover .compare-col-code {
+  color: var(--color-accent);
+}
+
+.compare-hint {
+  color: var(--color-text-muted);
+  font-size: 13px;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Comparison Table */
+.compare-table-wrap {
+  overflow-x: auto;
+  margin-bottom: var(--spacing-md);
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 500px;
+}
+
+.compare-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.compare-table th {
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--color-header-bg);
+  border-bottom: 1px solid var(--color-border-dark);
+  text-align: center;
+  font-weight: 600;
+  vertical-align: bottom;
+}
+
+.compare-ingredient-col {
+  text-align: left !important;
+  min-width: 200px;
+}
+
+.compare-product-col {
+  min-width: 120px;
+}
+
+.compare-col-code {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
+
+.compare-col-name {
+  font-size: 11px;
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.compare-table td {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-bottom: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.compare-ingredient-name {
+  text-align: left !important;
+  font-weight: 500;
+}
+
+.compare-present {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+}
+
+.compare-absent {
+  color: var(--color-text-muted);
+}
+
+.compare-row-shared {
+  background-color: #f0fdf4;
+}
+
+.compare-row-unique {
+  background-color: #fffbeb;
+}
+
+/* Compare Legend */
+.compare-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.legend-swatch {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid var(--color-border);
+}
+
+.legend-swatch-shared {
+  background-color: #f0fdf4;
+}
+
+.legend-swatch-unique {
+  background-color: #fffbeb;
+}
+
+/* Ingredient Filter Bar */
+.ingredient-filter-bar {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.ingredient-filter-bar .search-input {
+  flex: 1;
+  min-width: 180px;
+}
+
+.product-filter-wrap {
+  position: relative;
+  flex: 1;
+  min-width: 180px;
+}
+
+.product-filter-wrap .search-input {
+  width: 100%;
+}
+
+.product-filter-wrap .compare-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+/* 2-Column Ingredient Table Grid */
+.freq-table-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+.freq-table-col .freq-table {
+  margin-bottom: 0;
+}
+
+/* Clickable ingredient rows */
+.freq-table tbody tr {
+  cursor: pointer;
+}
+
+.freq-table tbody tr:hover {
+  background-color: #eff6ff;
+}
+
+.freq-row-expanded {
+  background-color: #eff6ff !important;
+}
+
+/* Ingredient Detail Row */
+.ingredient-detail-row td {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-top: none;
+  background-color: #f8faff;
+}
+
+.ingredient-detail-row:hover {
+  background-color: #f8faff !important;
+  cursor: default;
+}
+
+.ingredient-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.ingredient-product-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background-color: var(--color-badge-bg);
+  border-radius: 12px;
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: background-color 0.15s ease;
+}
+
+.ingredient-product-link:hover {
+  background-color: #dbeafe;
+  color: var(--color-accent);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .main-content {
     padding: var(--spacing-md);
+  }
+
+  .header-content {
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+  }
+
+  .header-nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
   }
 
   .filters {
@@ -551,5 +1195,30 @@ body {
   .nutrients-table th.amount-col,
   .nutrients-table td.amount {
     width: 70px;
+  }
+
+  .stat-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bar-label {
+    width: 100px;
+    font-size: 12px;
+  }
+
+  .freq-bar-col {
+    display: none;
+  }
+
+  .freq-table-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ingredient-filter-bar {
+    flex-direction: column;
+  }
+
+  .histogram {
+    height: 150px;
   }
 }

@@ -4,6 +4,8 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { copyFileSync, existsSync, mkdirSync } from 'fs';
 import productRoutes from './routes/products.js';
+import exportRoutes from './routes/export.js';
+import statsRoutes from './routes/stats.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -33,6 +35,8 @@ app.use(express.json());
 app.use('/public', express.static(publicDir));
 
 app.use('/api', productRoutes);
+app.use('/api', exportRoutes);
+app.use('/api', statsRoutes);
 
 // Endpoint to refresh the database copy
 app.post('/api/refresh-db', (_req, res) => {
